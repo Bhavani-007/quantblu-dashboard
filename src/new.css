@@ -1,0 +1,136 @@
+body {
+    margin-top: 30px;
+  }
+  
+  .green-text {
+    color: green;
+  }
+  
+  .red-text {
+    color: red;
+  }
+  
+  .dashboard {
+    width: 100%;
+    max-width: 466px; 
+    margin: 0 auto; /* Center the dashboard */
+    
+  }
+  select {
+    outline: none;
+  }
+
+ 
+  .content-wrapper {
+    background-color: #1e222d;
+    border-radius: 24px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 12px;
+    background-color: #0b101b;
+    border-radius: 20px 20px 16px 16px;
+    border-style: solid;
+    border-color: #38393b;
+  }
+  
+  .nav-button {
+    border: 2px solid #3F4652;
+    background-color: #0b101b;
+    color: rgb(200, 199, 207);
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 16px;
+  }
+  
+  .active-tab-button{
+    border: 2px solid #3F4652;
+    background-color: #303235;
+    color: rgb(200, 199, 207);
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 16px;
+  }
+  
+  .nav-button:hover, .active-tab-button:hover{
+    cursor: pointer;
+  }
+
+
+  .table {
+    background-color: #1e222d;
+    max-height: 100%; /* Occupy full height of the dashboard */
+    border-radius: 0px 0px 20px 20px;
+    max-height: 500px; /* Set maximum height */
+  overflow-y: auto; /* Enable scrolling */
+  }
+
+  .table::-webkit-scrollbar {
+    width: 8px; /* width of the scrollbar */
+  }
+  
+  .table::-webkit-scrollbar-track {
+    background: black; 
+  }
+  
+  .table::-webkit-scrollbar-thumb {
+    background: #555; /* Set the color of the scrollbar thumb */
+    border-radius: 5px; /* Set the border radius of the scrollbar thumb */
+  }
+  
+  .table::-webkit-scrollbar-thumb:hover {
+    background: #888; /* Set the color of the scrollbar thumb on hover */
+  }
+  
+  .table-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-style: solid;
+    border-bottom: #d3d7df;
+    border-width: 1px;
+  }
+
+  .table-row:hover{
+    background-color: #38393b;
+  }
+  
+  .table-data {
+    flex: 1;
+    text-align: right;
+  }
+
+  .table-data:first-child {
+    text-align: left; 
+  }
+  
+  @media (max-width: 600px) {
+    .content-wrapper {
+      width: 90%;
+      margin: 0 auto;
+    }
+  
+    .navbar {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .nav-button {
+      padding: 8px;
+    }
+  
+    .table-row {
+      flex-direction: column;
+    }
+  
+    .table-data {
+      flex: 1;
+      text-align: center;
+      padding: 5px;
+    }
+  }
+
